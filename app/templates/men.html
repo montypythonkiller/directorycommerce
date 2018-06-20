@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+        {% for item in items %}
+          <div class="container">
+                <img src='{{item.image}}'>
+                <h3>{{ item.product_name}}</h3> for <b>Rs. {{item.price}}</b><br/>
+                <center><a href="{{item.link}}"><button class="button">Buy</button></a></center>
+          </div>
+        {% endfor %} 
+
+{% endblock %}
